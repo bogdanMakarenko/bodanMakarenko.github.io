@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+/* HEADER */
+header{
+    display: flex;
+    flex-flow: column;
+}
+.heading{
+    display: flex;
+    padding: 38px 0 35px 0;
+    border-bottom: 1px solid rgba(72,77,81,0.08);
+}
+.head-img{
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+    /* NAVIGATION */
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav a{
+    display: block;
+    padding: 16px 0 15px 0;
+    margin-right: 24px;
+    margin-top: -1px;
+    border-top: 1px solid transparent;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #484d51;
+}
+.nav a:hover{
+    border-top: 1px solid #ae9584;
+    color: #ae9584;
+}
+.nav .last-a{
+    margin-right: 0;
+}
+
+/* MAIN part */
+.main-home {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.main-img {
+    background: url(../img/home/main.png)no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 432px;
+}
+
+    /* ARTICLES */
+article{
+    margin: 72px 0 0 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 800px;
+}
+article:last-of-type{
+    margin-bottom: 120px;
+}
+
+article h2{
+    font-weight: 700;
+    width: 60px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ae9584;
+}
+article h3{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.3px;
+    color: #484d51;
+}
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #a3a6a8;
+    text-align: justify;
+}
+
+    /* Recipe images */
+.main-home-dinner {
+    background: url(../img/home/dinner.png)no-repeat center center;
+    background-size: cover;
+    width: 47.5%;
+    height: 328px;
+}
+.main-home-breakfast {
+    background: url(../img/home/breakfast.png)no-repeat center center;
+    background-size: cover;
+    width: 47.5%;
+    height: 328px;
+}
+.main-home-snacks {
+    background: url(../img/home/snacks.png)no-repeat center center;
+    background-size: cover;
+    width: 47.5%;
+    height: 328px;
+}
+
+    /* RECIPE */
+.main-home-recipe {
+    display: flex;
+    flex-flow: column;
+    width: 46.5%;
+    max-height: 320px;
+}
+.main-home-recipe h2,
+.main-home-recipe > p{
+    padding: 16px 0 16px 0;
+}
+
+
+    /* Read more button */
+.main-home-recipe-button{
+    display: flex;
+}
+
+.main-home-recipe-button > a{
+    display: block;
+    width: 97px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #484d51;
+    z-index: 2;
+}
+.main-home-recipe-button > div{
+    width: 72px;
+    height: 32px;
+    background-color: #f8f8f9;
+    margin-left: -72px;
+    border-radius: 4px;
+}
+.arrow{
+    display: block;
+    width: 4px;
+    height: 4px;
+    position: relative;
+    right: 22px;
+    top: 14px;
+    transform: rotate(45deg);
+    border-style: solid;
+    border-color: #484d51;
+    border-width: 2px 2px 0 0;
+}
+
+.main-home-recipe-button a:hover{
+    cursor: pointer;
+    color: #ae9584;
+}
+.main-home-recipe-button a:hover ~ .arrow{
+    border-color: #ae9584;
+}
+.main-home-recipe-button a:hover ~ div{
+    background-color: rgba(234,234,237,0.45);
+}
+
+/* FOOTER */
+
+footer{
+    background: url(../img/common/footer.png)no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 432px;
+}
