@@ -1,3 +1,3 @@
-# bodanMakarenko.github.io
+# bogdanMakarenko.github.io
 
 Cooking site for university project
