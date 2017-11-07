@@ -5,6 +5,9 @@ header{
     display: flex;
     flex-flow: column;
 }
+main{
+    width: 1440px;
+}
 .heading{
     display: flex;
     padding: 38px 0 35px 0;
@@ -179,18 +182,72 @@ footer{
     width: 100%;
     height: 432px;
 }
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 88px;
+    opacity: 0.6;
+    background-color: #484d51;
+    position: relative;
+    top: 79.6%;
+}
+.copyright span{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #ffffff;
+    margin: 2.3% 7.8%;
+}
 
 /* BREAKFAST */
 
 /* MAIN */
-.main-img-breakfast{
-    background: url(../img/breakfest/egg.png)no-repeat center center;
+.main-img-breakfast,
+.main-img-supchik{
     background-size: cover;
     width: 100%;
     height: 432px;
+    position: relative;
     margin-bottom: 64px;
 }
-.main-img-breakfast h1{
+.main-img-breakfast{
+    background: url(../img/breakfest/Breakfast.png)no-repeat center center;
+}
+.main-img-breakfast a,
+.main-img-supchik a{
+    color: #ffffff;
+}
+.main-img-breakfast a:hover,
+.main-img-supchik a:hover{
+    text-decoration: underline;
+}
+.main-img-breakfast p,
+.main-img-supchik p{
+    height: 16px;
+    opacity: 0.48;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    top: 5.6%;
+    left: 15%;
+    text-align: left;
+}
+.main-img-breakfast span,
+.main-img-supchik span{
+    color: #f9e4b3;
+    z-index: 2;
+    padding: 0 5px;
+}
+.main-img-breakfast h1,
+.main-img-supchik h1{
     width: 217px;
     height: 66px;
     font-family: 'Source Serif Pro', serif;
@@ -198,11 +255,10 @@ footer{
     font-weight: 600;
     letter-spacing: 0.9px;
     text-align: left;
-    position: absolute;
-    left: 42.42%;
-    top: 31.7%;
+    position: relative;
+    left: 42.5%;
+    top: 31%;
     color: #fff;
-    text-shadow: 0 0 0 #00000080;
 }
 .main-breakfast-tost{
     background: url(../img/common/tost.png)no-repeat center center;
@@ -210,7 +266,14 @@ footer{
     width: 176px;
     height: 152px;
 }
-.main-breakfast{
+.main-breakfast article:first-of-type .main-breakfast-tost{
+    background: url(../img/supchik/soup.png)no-repeat center center;
+    background-size: cover;
+    width: 176px;
+    height: 152px;
+}
+.main-breakfast,
+.main-supchik{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -219,7 +282,8 @@ footer{
     width: 990px;
 }
     /* ARTICLES */
-.main-breakfast article{
+.main-breakfast article,
+.main-supchik article{
     margin: 0 0 48px 0;
     max-width: 472px;
 }
@@ -263,4 +327,97 @@ footer{
 .load-more:hover{
     color: #cca57f;
     background-color: rgba(234,234,237,0.45);
+}
+
+/* SUPCHICK */
+
+.main-img-supchik{
+    background: url(../img/supchik/Supchik.png)no-repeat center center;
+}
+.wrapper{
+    width: 1440px;
+    background-color: #f8f8f9;
+    padding: 80px 0 60px 0;
+}
+.recipe{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+.recipe div{
+    width: 376px;
+}
+.recipe div h2{
+    width: 376px;
+    height: 72px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #484d51
+}
+.recipe div p{
+    width: 376px;
+    height: 120px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    text-align: justify;
+    color: #a3a6a8;
+}
+.recipe ul{
+    width: 376px;
+    height: 216px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #484d51;
+    margin-left: 144px;
+}
+.save-recipe{
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    height: 216px;
+}
+.save-recipe img{
+    margin-left: 80px;
+}
+.save-recipe div{
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.save-recipe h2{
+    width: 264px;
+    height: 16px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #ae9584;
+    text-transform: uppercase;
+}
+.save-recipe div button{
+    width: 176px;
+    height: 48px;
+    border-radius: 6px;
+    background-color: #f8f8f9;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    letter-spacing: 1px;
+    color: #484d51;
+    border: 0;
+    cursor: pointer;
+}
+.save-recipe div button:hover{
+    background-color: #ededf1;
 }
