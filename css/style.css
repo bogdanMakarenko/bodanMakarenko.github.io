@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+    overflow-x: hidden;
+}
 /* HEADER */
 header{
     display: flex;
