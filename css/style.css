@@ -394,7 +394,7 @@ footer{
     margin-left: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .save-recipe h2{
     width: 264px;
