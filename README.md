@@ -1,3 +1,7 @@
 # bogdanMakarenko.github.io/index.html
+ 
+What:
+Cooking site general pages.
 
-Cooking site
+Purpose:
+To perform the given task in university discipline.
